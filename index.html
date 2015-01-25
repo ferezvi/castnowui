@@ -11,10 +11,6 @@
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-		<!--	Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
 
 </head>
 
@@ -24,7 +20,7 @@
 	<header>
 		<!-- Navigation Bar -->
 		<nav>
-			<div	class="nav-wrapper teal darken-2"> 
+			<div	class="nav-wrapper light-blue lighten-1"> 
 				<div class="container2">
 					<a id="logo-container" href="#" class="brand-logo" ><span class="mdi-hardware-cast"></span> Castnow Web</a>	
 					<ul id="nav-mobile" class="right side-nav">
@@ -36,30 +32,42 @@
 				</div>
 			</div>
 		</nav>
-		<div class="section z-depth-1 teal darken-2 nav-back" ></div><!-- Just to look nice same nav color -->
+		<div class="section z-depth-1 light-blue lighten-1 nav-back" ></div><!-- Just to look nice same nav color -->
 	</header>	
 	<!-- MAIN CONTAINER -->
 	<div class=main>
 		<!-- FAB BUTTON -->
 		<div class="fab">
-			<a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>			
+			<a class="btn-floating btn-large waves-effect waves-light red darken-2"><i class="mdi-content-add"></i></a>			
 		</div>	
 		<!-- MEDIA CONTAINER -->
 		<div class="container2"> <!-- Add a container inside main block margins included-->
 
 				<div class="card z-depth-1 main-container"> <!-- Add a Material-design card panel --> 
 
-					<div class="media-content white"></div>
+					<div class="media-content"></div>
+
+					<!-- 	<div class="media-content card-image waves-effect waves-block waves-light">
+	          				<img class="responsive-img" src="images/img.jpg" >
+	        			</div> -->
 
 					<div class="card-content">
 
-	 				<!-- PLAYER CONTROLS -->
-						<a class="waves-effect waves-light btn-large btn-player green white-text"><i class="large mdi-av-skip-previous "></i></a>
-						<a class="waves-effect waves-light btn-large btn-player red white-text" ><i class="large mdi-av-play-arrow"></i></a>
-						<a class="waves-effect waves-light btn-large btn-player yellow white-text"><i class="large mdi-av-skip-next "></i></a>
-						<a	class="waves-effect waves-light btn-flat btn-list grey-text text-darken-4 card-title activator"><i class="large mdi-navigation-more-vert right"></i></a>
-					</div>
+						<form action="#">
+						  <p class="range-field orange-text">
+						    <input type="range" id="time" min="0" max="100" />
+						  </p>
+						</form>
 
+						<div class="row">
+							<!-- PLAYER CONTROLS -->
+							<a class="waves-effect waves-light btn-large btn-player green white-text"><i class="large mdi-av-skip-previous "></i></a>
+							<a class="waves-effect waves-light btn-large btn-player red white-text" ><i class="large mdi-av-play-arrow"></i></a>
+							<a class="waves-effect waves-light btn-large btn-player yellow white-text"><i class="large mdi-av-skip-next "></i></a>
+							<a	class="waves-effect waves-light btn-flat btn-list grey-text text-darken-4 card-title activator"><i class="large mdi-navigation-more-vert right"></i></a>
+						</div>
+
+					</div>
 					<!-- PLAYER LIST -->
 					<div style="width: 100%;" class="card-reveal">
 						<span class="card-title grey-text text-darken-4">Play List <i class="mdi-navigation-close right"></i></span>
@@ -75,5 +83,9 @@
 				</div>		
 			</div>
 		</div>
+			<!--	Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
 	</body>
 </html>

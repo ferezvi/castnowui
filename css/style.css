@@ -23,17 +23,12 @@
   margin-top:-8rem;
 }
 
-.icon-block {
-  padding: 0 15px;
-}
+
 
 
  .content .main-inner-container {
   position:relative
   }
- .card-panel{
-  z-index:200;background:white
- }
 
 
 .btn-player{
@@ -50,9 +45,7 @@
   height: auto;
 }
 
-.card .card-content {
-padding: 0px;
-}
+
 
 .card a {
 color: #ffab40;
@@ -63,8 +56,14 @@ margin-right: 1px;
 .media-content{
 
     width: 100%; 
-    height: 500px;
+    height: 25rem;
     overflow: hidden;
+    
+  background-image: url("../images/img.jpg"); no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
 
 }
 /*PERSONAL CONTAINER*/
@@ -81,27 +80,24 @@ margin-right: 1px;
   margin-right: -0.75rem; 
 }
 
-  /* Landscape phones and down */
-@media (max-width: 480px) { 
+  
+
+
+
+
+/*Mobile Devices <= 600px */
+@media (max-width: 600px) { 
     .container2 {
     width: 100%; 
   }
   .fab {
-    right: 0rem;
+    right: 1rem;
   }
 }
 
-@media (min-width:481px) and (max-width:768px) { 
-    .container2 {
-    width: 100%; 
-  }
-  .fab {
-    right: 0rem;
-  }
-}
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 769px) and (max-width: 1199px) { 
+/* 600px < Tablet Devices < 992px */
+@media (min-width: 601px) and (max-width: 991px) { 
     .container2 {
     width: 85%; 
   }
@@ -110,8 +106,8 @@ margin-right: 1px;
   }
 }
 
-/* Large desktop */
-@media (min-width: 1200px) { 
+/* Desktop Devices */
+@media (min-width: 992px) { 
   .container2 {
     width: 75%; 
   }
