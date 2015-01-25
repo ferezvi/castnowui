@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<!-- Vieport needed to have a responsive design -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>CASTNOW WEB APP</title>
+
+	<!-- CSS	-->
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+		<!--	Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+
+</head>
+
+<!-- BODY -->
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- Navigation Bar -->
+		<nav>
+			<div	class="nav-wrapper teal darken-2"> 
+				<div class="container2">
+					<a id="logo-container" href="#" class="brand-logo" ><span class="mdi-hardware-cast"></span> Castnow Web</a>	
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="#" ><i class="mdi-content-mail left"></i>Contact</a></li>
+						<li><a href="#" ><i class="mdi-action-help left"></i>Help</a></li>
+						<li><a href="#"><i class="mdi-action-settings left"></i>Settings</a></li>
+					</ul>
+					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+		<div class="section z-depth-1 teal darken-2 nav-back" ></div><!-- Just to look nice same nav color -->
+	</header>	
+	<!-- MAIN CONTAINER -->
+	<div class=main>
+		<!-- FAB BUTTON -->
+		<div class="fab">
+			<a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>			
+		</div>	
+		<!-- MEDIA CONTAINER -->
+		<div class="container2"> <!-- Add a container inside main block margins included-->
+
+				<div class="card z-depth-1 main-container"> <!-- Add a Material-design card panel --> 
+
+					<div class="media-content white"></div>
+
+					<div class="card-content">
+
+	 				<!-- PLAYER CONTROLS -->
+						<a class="waves-effect waves-light btn-large btn-player green white-text"><i class="large mdi-av-skip-previous "></i></a>
+						<a class="waves-effect waves-light btn-large btn-player red white-text" ><i class="large mdi-av-play-arrow"></i></a>
+						<a class="waves-effect waves-light btn-large btn-player yellow white-text"><i class="large mdi-av-skip-next "></i></a>
+						<a	class="waves-effect waves-light btn-flat btn-list grey-text text-darken-4 card-title activator"><i class="large mdi-navigation-more-vert right"></i></a>
+					</div>
+
+					<!-- PLAYER LIST -->
+					<div style="width: 100%;" class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Play List <i class="mdi-navigation-close right"></i></span>
+						<ul>
+							<li>file1</li>
+							<li>file2</li>
+							<li>file3</li>
+							<li>file4</li>
+							<li>file5</li>
+							<li>file6</li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</body>
+</html>

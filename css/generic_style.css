@@ -1,0 +1,45 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ .fab {
+
+    float: left;
+    position: fixed;
+    right: 5rem;
+
+    z-index: 10;
+    margin-top:6rem;
+}
+
+.container {
+    width: 85%;
+}
+
+.main-container{
+    
+     margin-top:-8rem;
+
+}
+
+
+.generic-content{
+
+    height: 400px;
+    margin: 20px 50px;
+
+}
+
+
+.app-intro{
+    height:8rem;
+    margin-bottom:2rem
+    }
+
+
+
+
